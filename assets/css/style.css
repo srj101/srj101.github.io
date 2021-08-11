@@ -1470,3 +1470,14 @@ section {
   letter-spacing: 0;
   color: #71c55d;
 }
+#screenshots .owl-item > div > a > img {
+  height: 200px;
+}
+
+.modal-content {
+
+  background: #000;
+}
+button.close {
+  color: #fff;
+}

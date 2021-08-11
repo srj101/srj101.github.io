@@ -1,0 +1,13 @@
+#hero {
+    height: 50vh;
+    background-position: center;
+}
+img.feature-img {
+    box-shadow: 0 20px 19px #000;
+}
+pre code {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+  }

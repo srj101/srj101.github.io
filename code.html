@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>SRJOY | Quiz Project | Code</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/vendor/modal-video/css/modal-video.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/lightbox.css" rel="stylesheet" />
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+ 
+  <link rel="stylesheet" href="assets/css/features.css">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="index.html"><span>SR</span>JOY</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" title="" /></a>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="index.html">Home</a></li>
+          <li><a href="index.html#about-us">About</a></li>
+          <li><a href="index.html#features">Mission</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="code.html">Code</a></li>
+          <li><a href="index.html#screenshots">Screenshots</a></li>
+          <li><a href="index.html#team">Team</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>CODE</h1>
+    </div>
+  </section><!-- End Hero Section -->
+
+
+  <main id="main">
+
+
+ <!-- ======= About Us Section ======= -->
+ <section id="about-us" class="about-us padd-section"  data-aos="fade-up">
+  <div class="container" data-aos="fade-up">
+    <div class="row justify-content-center  align-items-center">
+
+
+
+      <div class="col-md-12 ">
+        <div class="about-content" data-aos="fade-left" data-aos-delay="100">
+
+          <pre>
+            <code>
+              #include&#x3C;bits/stdc++.h&#x3E;
+              #include&#x3C;iostream&#x3E;
+              #include&#x3C;time.h&#x3E;
+              #include&#x3C;string.h&#x3E;
+              #include&#x3C;windows.h&#x3E;
+              using namespace std;
+              
+              vector&#x3C; pair&#x3C;string,pair&#x3C;string,pair&#x3C;int,string&#x3E; &#x3E; &#x3E; &#x3E; cas;
+              vector&#x3C; pair&#x3C;string,pair&#x3C;string,pair&#x3C;int,string&#x3E; &#x3E; &#x3E; &#x3E; ement;
+              vector&#x3C; pair&#x3C;string,pair&#x3C;string,pair&#x3C;int,string&#x3E; &#x3E; &#x3E; &#x3E; general;
+              vector&#x3C; pair&#x3C;string,pair&#x3C;string,pair&#x3C;int,string&#x3E; &#x3E; &#x3E; &#x3E; sport;
+              vector&#x3C; pair&#x3C;string,pair&#x3C;string,pair&#x3C;int,string&#x3E; &#x3E; &#x3E; &#x3E; history;
+              vector&#x3C; pair&#x3C;string,pair&#x3C;string,pair&#x3C;int,string&#x3E; &#x3E; &#x3E; &#x3E; mathametic;
+              int score ,q,s,correctAns,wrongAns;
+              void setcolorandbackground(int textc,int backg)
+              {
+                  WORD color = ((backg &#x26; 0x0F)&#x3C;&#x3C;4) + (textc &#x26; 0x0F);
+                  SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),color);
+              }
+              int random()
+              {
+              &#x9;system(&#x22;cls&#x22;);
+              &#x9;srand(time(0));
+              &#x9;int r = rand()%20;
+              &#x9;return r;&#x9;
+              }
+              void mainQuestion(vector&#x3C; pair&#x3C;string,pair&#x3C;string,pair&#x3C;int,string&#x3E; &#x3E; &#x3E; &#x3E; vec,int r)
+              {
+              &#x9;&#x9;&#x9;&#x9;int choose;
+              &#x9;&#x9;&#x9;
+              &#x9;&#x9;&#x9;&#x9;setcolorandbackground(3,0);
+              &#x9;&#x9;&#x9;&#x9;cout &#x3C;&#x3C; vec[r].first &#x3C;&#x3C; endl;
+              &#x9;&#x9;&#x9;&#x9;setcolorandbackground(10,0);
+              &#x9;&#x9;&#x9;&#x9;cout &#x3C;&#x3C; &#x22;\nOPTION: &#x22; ;
+              &#x9;&#x9;&#x9;&#x9;setcolorandbackground(15,0);
+              &#x9;&#x9;&#x9;&#x9;cout &#x3C;&#x3C; vec[r].second.first &#x3C;&#x3C; endl;
+              &#x9;&#x9;&#x9;&#x9;cout &#x3C;&#x3C; &#x22;\n&#x22;;
+              
+              &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              &#x9;&#x9;&#x9;&#x9;setcolorandbackground(6,0);
+              &#x9;&#x9;&#x9;&#x9;cout &#x3C;&#x3C; &#x22;Choose Your Option (IF YOU WANNA SKIPP THIS QUESTION, THEN PRESS 0): &#x22;;
+              &#x9;&#x9;&#x9;&#x9;cin&#x3E;&#x3E;choose;
+              &#x9;&#x9;&#x9;&#x9;if(choose == vec[r].second.second.first)
+              &#x9;&#x9;&#x9;&#x9;{
+              &#x9;&#x9;&#x9;&#x9;&#x9;setcolorandbackground(10,0);
+              &#x9;&#x9;&#x9;&#x9;&#x9;cout &#x3C;&#x3C; &#x22;\nCongratulations!! You Got 10 Points ... \n&#x22; &#x3C;&#x3C; endl;
+              &#x9;&#x9;&#x9;&#x9;&#x9;score+=10;
+              &#x9;&#x9;&#x9;&#x9;&#x9;q++;
+              &#x9;&#x9;&#x9;&#x9;&#x9;correctAns++;
+              &#x9;&#x9;&#x9;&#x9;}
+              &#x9;&#x9;&#x9;&#x9;else if(choose == 0)
+              &#x9;&#x9;&#x9;&#x9;{
+              &#x9;&#x9;&#x9;&#x9;&#x9;setcolorandbackground(2,0);
+              &#x9;&#x9;&#x9;&#x9;&#x9;cout &#x3C;&#x3C; &#x22;\nYou Skipped This Question \n&#x22; &#x3C;&#x3C; endl;
+              &#x9;&#x9;&#x9;&#x9;&#x9;s++;
+              &#x9;
+              &#x9;&#x9;&#x9;&#x9;}
+              &#x9;&#x9;&#x9;&#x9;else
+              &#x9;&#x9;&#x9;&#x9;{
+              &#x9;&#x9;&#x9;&#x9;&#x9;setcolorandbackground(4,0);
+              &#x9;&#x9;&#x9;&#x9;&#x9;cout &#x3C;&#x3C; &#x22;\nYou got -5  ... \n&#x22; &#x3C;&#x3C; endl;
+              &#x9;&#x9;&#x9;&#x9;&#x9;setcolorandbackground(2,0);
+              &#x9;&#x9;&#x9;&#x9;&#x9;cout &#x3C;&#x3C; &#x22;\nCorrect Answer is : &#x22; &#x3C;&#x3C; vec[r].second.second.second &#x3C;&#x3C; endl;
+              &#x9;&#x9;&#x9;&#x9;&#x9;score -=5;
+              &#x9;&#x9;&#x9;&#x9;&#x9;q++;
+              &#x9;&#x9;&#x9;&#x9;&#x9;wrongAns++;
+              &#x9;&#x9;&#x9;&#x9;}
+              &#x9;&#x9;&#x9;&#x9;getchar();
+              }
+              void sports()
+              {
+              sport.push_back({&#x22;In golf, what name is given to a hole score of two under par?&#x22; , {&#x22;\n 1. Albatross \n 2. Eagle \n 3. Bogey \n 4. Birdie &#x22;,{2,&#x22;Eagle&#x22;}}});
+              sport.push_back({&#x22;In what sport is a &#x27;shuttlecock&#x27; used?&#x22; , {&#x22;\n 1. Rugby \n 2. Badminton \n 3. Cricket \n 4. Table Tennis &#x22;,{2,&#x22;Badminton&#x22;}}});
+              sport.push_back({&#x22;Which team won the 2015-16 English Premier League?&#x22; , {&#x22;\n 1. Cheslea \n 2. Leicester City \n 3. Liverpool \n 4. Manchester United &#x22;,{2,&#x22;Leicester City&#x22;}}});
+              sport.push_back({&#x22;In baseball, how many fouls are an out?&#x22; , {&#x22;\n 1. 2 \n 2. 0 \n 3. 5 \n 4. 3 &#x22;,{2,&#x22;0&#x22;}}});
+              sport.push_back({&#x22;Which country will host the 2020 Summer Olympics?&#x22; , {&#x22;\n 1. Germany \n 2. Australia \n 3. Japan \n 4. China &#x22;,{3,&#x22;Japan&#x22;}}});
+              sport.push_back({&#x22;Who won the 2015 Formula 1 World Championship?&#x22; , {&#x22;\n 1. Lewis Hamilton \n 2. Sebastian Vettel \n 3. Jenson Button \n 4. Nico Rosberg &#x22;,{1,&#x22;Lewis Hamilton&#x22;}}});
+              sport.push_back({&#x22;Which driver has been the Formula 1 world champion for a record 7 times?&#x22; , {&#x22;\n 1. Fernando Alonso \n 2. Ayrton Senna \n 3. Jim Clark \n 4. Michael Schumacher &#x22;,{4,&#x22;Michael Schumacher&#x22;}}});
+              sport.push_back({&#x22;What was the final score of the Germany vs. Brazil 2014 FIFA World Cup match?&#x22; , {&#x22;\n 1. 16 - 0 \n 2. 7 - 1 \n 3. 3 - 4 \n 4. 0 - 1 &#x22;,{2,&#x22;7 - 1&#x22;}}});
+              sport.push_back({&#x22;How many points did LeBron James score in his first NBA game?&#x22; , {&#x22;\n 1. 19 \n 2. 69 \n 3. 41 \n 4. 25 &#x22;,{4,&#x22;25&#x22;}}});
+              sport.push_back({&#x22;In Baseball, how many times does the ball have to be pitched outside of the strike zone before the batter is walked?&#x22; , {&#x22;\n 1. 4 \n 2. 3 \n 3. 2 \n 4. 1 &#x22;,{1,&#x22;4&#x22;}}});
+              sport.push_back({&#x22;What team won the 2016 MLS Cup?&#x22; , {&#x22;\n 1. Montreal Impact \n 2. Toronto FC \n 3. Colorado Rapids \n 4. Seattle Sounders &#x22;,{4,&#x22;Seattle Sounders&#x22;}}});
+              sport.push_back({&#x22;What year did the New Orleans Saints win the Super Bowl?&#x22; , {&#x22;\n 1. 2010 \n 2. 2011 \n 3. 2009 \n 4. 2008 &#x22;,{1,&#x22;2010&#x22;}}});
+              sport.push_back({&#x22;Which team has won the most Stanley Cups in the NHL?&#x22; , {&#x22;\n 1. Detroit Red Wings \n 2. Montreal Canadians \n 3. Chicago Blackhawks \n 4. Toronto Maple Leafs &#x22;,{2,&#x22;Montreal Canadians&#x22;}}});
+              sport.push_back({&#x22;When was the first official international game played?&#x22; , {&#x22;\n 1. 1880 \n 2. 1872 \n 3. 1863 \n 4. 1865 &#x22;,{2,&#x22;1872&#x22;}}});
+              sport.push_back({&#x22;In bowling, what is the term used for getting three consecutive strikes?&#x22; , {&#x22;\n 1. Eagle \n 2. Flamingo \n 3. Birdie \n 4. Turkey &#x22;,{4,&#x22;Turkey&#x22;}}});
+              sport.push_back({&#x22;Which African American is in part responsible for integrating Major League baseball?&#x22; , {&#x22;\n 1. Curt Flood \n 2. Satchell Paige \n 3. Jackie Robinson \n 4. Roy Campanella &#x22;,{3,&#x22;Jackie Robinson&#x22;}}});
+              sport.push_back({&#x22;Who won the premier league title in the 2015-2016 season following a fairy tale run?&#x22; , {&#x22;\n 1. Watford \n 2. Stoke City \n 3. Leicester City \n 4. Tottenham Hotspur &#x22;,{3,&#x22;Leicester City&#x22;}}});
+              sport.push_back({&#x22;&#x27;Stadium of Light&#x27;&#x27; is the home stadium for which soccer team?&#x22; , {&#x22;\n 1. Manchester United \n 2. Paris Saints-Germain \n 3. Sunderland FC \n 4. Barcelona FC &#x22;,{3,&#x22;Sunderland FC&#x22;}}});
+              sport.push_back({&#x22;Which country will host the 2022 FIFA World Cup?&#x22; , {&#x22;\n 1. USA \n 2. Switzerland \n 3. Qatar \n 4. Japan &#x22;,{3,&#x22;Qatar&#x22;}}});
+              sport.push_back({&#x22;Who won the UEFA Champions League in 2016?&#x22; , {&#x22;\n 1. Real Madrid C.F. \n 2. Atletico Madrid \n 3. FC Bayern Munich \n 4. Manchester City F.C. &#x22;,{1,&#x22;Real Madrid C.F.&#x22;}}});
+              }
+              void Entertainment()
+              {&#x9;
+                 ement.push_back({&#x22;What breed of dog was Marley in the film &#x27;Marley &#x26; Me&#x27; (2008)?&#x22; , {&#x22;\n 1. Labrador Retriever \n 2. Dalmatian \n 3. Golden Retriever \n 4. Shiba Inu &#x22;,{1,&#x22;Labrador Retriever&#x22;}}});
+                 ement.push_back({&#x22;Which of the following movies was not based on a novel by Stephen King? &#x22; , {&#x22;\n 1. Carrie \n 2. Misery \n 3. The Thing \n 4. The Green Mile &#x22;,{3,&#x22;The Thing&#x22;}}});
+                 ement.push_back({&#x22;Which movie released in 2016 features Superman and Batman fighting?&#x22; , {&#x22;\n 1. Batman v Superman: Superapocalypse \n 2. Batman v Superman: Knightfall \n 3. Batman v Superman: Black of Knight \n 4. Batman v Superman: Dawn of Justice &#x22;,{4,&#x22;Batman v Superman: Dawn of Justice&#x22;}}});
+                 ement.push_back({&#x22;Daniel Radcliffe became a global star in the film industry due to his performance in which film franchise?&#x22; , {&#x22;\n 1. Ted \n 2. Harry Potter \n 3. Pirates of the Caribbean \n 4. Spy Kids &#x22;,{2,&#x22;Harry Potter&#x22;}}});
+                 ement.push_back({&#x22;Which actress danced the twist with John Travolta in &#x27;Pulp Fiction&#x27;?&#x22; , {&#x22;\n 1. Uma Thurman \n 2. Bridget Fonda \n 3. Kathy Griffin \n 4. Pam Grier &#x22;,{1,&#x22;Uma Thurman&#x22;}}});
+                 ement.push_back({&#x22;What was the title of the first Bond movie, released in 1962?&#x22; , {&#x22;\n 1. From Russia with Love \n 2. Thunderball \n 3. Goldfinger \n 4. Dr. No &#x22;,{4,&#x22;Dr. No&#x22;}}});
+                 ement.push_back({&#x22;This movie contains the quote, &#x27;Nobody puts Baby in a corner.&#x27;&#x22; , {&#x22;\n 1. Pretty in Pink \n 2. Ferris Bueller&#x27;s Day Off \n 3. Three Men and a Baby \n 4. Dirty Dancing &#x22;,{4,&#x22;Dirty Dancing&#x22;}}});
+                 ement.push_back({&#x22;Which of these movies did Jeff Bridges not star in?&#x22; , {&#x22;\n 1. Tron: Legacy \n 2. The Hateful Eight \n 3. True Grit \n 4. The Giver &#x22;,{2,&#x22;The Hateful Eight&#x22;}}});
+                 ement.push_back({&#x22;Which movie includes a giant bunny-like spirit who has magic powers including growing trees?&#x22; , {&#x22;\n 1. Hop \n 2. Alice in Wonderland \n 3. Rise of the Guardians \n 4. My Neighbor Totoro &#x22;,{4,&#x22;My Neighbor Totoro&#x22;}}});
+                 ement.push_back({&#x22;What is the oldest Disney film?&#x22; , {&#x22;\n 1. Snow White and the Seven Dwarfs \n 2. Dumbo \n 3. Fantasia \n 4. Pinocchio &#x22;,{1,&#x22;Snow White and the Seven Dwarfs&#x22;}}});
+                 ement.push_back({&#x22;In the movie &#x27;Spaceballs&#x27;, what are the Spaceballs attempting to steal from Planet Druidia?&#x22; , {&#x22;\n 1. Princess Lonestar \n 2. Meatballs \n 3. The Schwartz \n 4. Air &#x22;,{4,&#x22;Air&#x22;}}});
+                 ement.push_back({&#x22;In the movie Gremlins, after what time of day should you not feed Mogwai?&#x22; , {&#x22;\n 1. Evening \n 2. Morning \n 3. Afternoon \n 4. Midnight &#x22;,{4,&#x22;Midnight&#x22;}}});
+                 ement.push_back({&#x22;When does &#x27;Rogue One: A Star Wars Story&#x27; take place chronologically in the series?&#x22; , {&#x22;\n 1. After Episode 6 \n 2. Before Episode 1 \n 3. Between Episode 4 and 5 \n 4. Between Episode 3 and 4 &#x22;,{4,&#x22;Between Episode 3 and 4&#x22;}}});
+                 ement.push_back({&#x22;In the movie &#x27;Blade Runner&#x27;, what is the term used for human-like androids ?&#x22; , {&#x22;\n 1. Cylons \n 2. Replicants \n 3. Synthetics \n 4. Skinjobs &#x22;,{2,&#x22;Replicants&#x22;}}});
+                 ement.push_back({&#x22;What was Bruce Campbell&#x27;s iconic one-liner after getting a chainsaw hand in Evil Dead 2?&#x22; , {&#x22;\n 1. Nice. \n 2. Gnarly. \n 3. Perfect. \n 4. Groovy. &#x22;,{4,&#x22;Groovy.&#x22;}}});
+                 ement.push_back({&#x22;For the film &#x27;Raiders of The Lost Ark&#x27;, what was Harrison Ford sick with during the filming of the Cairo chase?&#x22; , {&#x22;\n 1. Acid Reflux \n 2. Anemia \n 3. Dysentery \n 4. Constipation &#x22;,{3,&#x22;Dysentery&#x22;}}});
+                 ement.push_back({&#x22;In which film does Humphrey Bogart say the famous line, &#x27;Here&#x27;s looking at you, kid&#x27;?&#x22; , {&#x22;\n 1. The Maltese Falcon \n 2. Citizen Kane \n 3. The Treasure of the Sierra Madre \n 4. Casablanca &#x22;,{4,&#x22;Casablanca&#x22;}}});
+                 ement.push_back({&#x22;Who directed the Kill Bill movies?&#x22; , {&#x22;\n 1. David Lean \n 2. Arnold Schwarzenegger \n 3. Stanley Kubrick \n 4. Quentin Tarantino &#x22;,{4,&#x22;Quentin Tarantino&#x22;}}});
+                 ement.push_back({&#x22;In &#x27;ALF&#x27;, what was ALF&#x27;s real name?&#x22; , {&#x22;\n 1. Gordon Foster \n 2. Gordon Milipp \n 3. Gordon von Gam \n 4. Gordon Shumway &#x22;,{4,&#x22;Gordon Shumway&#x22;}}});
+                 ement.push_back({&#x22;In the movie &#x27;V for Vendetta,&#x27; what is the date that masked vigilante &#x27;V&#x27; urges people to remember?&#x22; , {&#x22;\n 1. November 5th \n 2. November 6th \n 3. September 5th \n 4. November 4th &#x22;,{1,&#x22;November 5th&#x22;}}});
+              }
+              void computerandScience()
+              {
+              cas.push_back({&#x22;Which company was established on April 1st, 1976 by Steve Jobs, Steve Wozniak and Ronald Wayne?&#x22; , {&#x22;\n 1. Apple \n 2. Commodore \n 3. Microsoft \n 4. Atari &#x22;,{1,&#x22;Apple&#x22;}}});
+              cas.push_back({&#x22;What does the &#x27;MP&#x27; stand for in MP3?&#x22; , {&#x22;\n 1. Moving Picture \n 2. Micro Point \n 3. Music Player \n 4. Multi Pass &#x22;,{1,&#x22;Moving Picture&#x22;}}});
+              cas.push_back({&#x22;The programming language &#x27;Swift&#x27; was created to replace what other programming language?&#x22; , {&#x22;\n 1. C++ \n 2. Objective-C \n 3. C# \n 4. Ruby &#x22;,{2,&#x22;Objective-C&#x22;}}});
+              cas.push_back({&#x22;What amount of bits commonly equals one byte?&#x22; , {&#x22;\n 1. 1 \n 2. 64 \n 3. 2 \n 4. 8 &#x22;,{4,&#x22;8&#x22;}}});
+              cas.push_back({&#x22;In the programming language Java, which of these keywords would you put on a variable to make sure it doesn&#x27;t get modified?&#x22; , {&#x22;\n 1. Static \n 2. Private \n 3. Public \n 4. Final &#x22;,{4,&#x22;Final&#x22;}}});
+              cas.push_back({&#x22;The series of the Intel HD graphics generation succeeding that of the 5000 and 6000 series (Broadwell) is called:&#x22; , {&#x22;\n 1. HD Graphics 600 \n 2. HD Graphics 700 \n 3. HD Graphics 500 \n 4. HD Graphics 7000 &#x22;,{3,&#x22;HD Graphics 500&#x22;}}});
+              cas.push_back({&#x22;What is the most preferred image format used for logos in the Wikimedia database?&#x22; , {&#x22;\n 1. .jpeg \n 2. .gif \n 3. .svg \n 4. .png &#x22;,{3,&#x22;.svg&#x22;}}});
+              cas.push_back({&#x22;In web design, what does CSS stand for?&#x22; , {&#x22;\n 1. Counter Strike: Source \n 2. Corrective Style Sheet \n 3. Cascading Style Sheet \n 4. Computer Style Sheet &#x22;,{3,&#x22;Cascading Style Sheet&#x22;}}});
+              cas.push_back({&#x22;What is the code name for the mobile operating system Android 7.0?&#x22; , {&#x22;\n 1. Jelly Bean \n 2. Nougat \n 3. Ice Cream Sandwich \n 4. Marshmallow &#x22;,{2,&#x22;Nougat&#x22;}}});
+              cas.push_back({&#x22;How many kilobytes in one gigabyte (in decimal)?&#x22; , {&#x22;\n 1. 1024 \n 2. 1048576 \n 3. 1000000 \n 4. 1000 &#x22;,{3,&#x22;1000000&#x22;}}});
+              cas.push_back({&#x22;In &#x27;Hexadecimal&#x27;, what color would be displayed from the color code? &#x27;#00FF00&#x27;?&#x22; , {&#x22;\n 1. Red \n 2. Green \n 3. Yellow \n 4. Blue &#x22;,{2,&#x22;Green&#x22;}}});
+              cas.push_back({&#x22;Which computer language would you associate Django framework with?&#x22; , {&#x22;\n 1. Java \n 2. C++ \n 3. Python \n 4. C# &#x22;,{3,&#x22;Python&#x22;}}});
+              cas.push_back({&#x22;What does LTS stand for in the software market?&#x22; , {&#x22;\n 1. Ludicrous Turbo Speed \n 2. Ludicrous Transfer Speed \n 3. Long Taco Service \n 4. Long Term Support &#x22;,{4,&#x22;Long Term Support&#x22;}}});
+              cas.push_back({&#x22;The numbering system with a radix of 16 is more commonly referred to as &#x22; , {&#x22;\n 1. Duodecimal \n 2. Hexidecimal \n 3. Binary \n 4. Octal &#x22;,{2,&#x22;Hexidecimal&#x22;}}});
+              cas.push_back({&#x22;This mobile OS held the largest market share in 2012.&#x22; , {&#x22;\n 1. Symbian \n 2. BlackBerry \n 3. iOS \n 4. Android &#x22;,{3,&#x22;iOS&#x22;}}});
+              cas.push_back({&#x22;How many values can a single byte represent?&#x22; , {&#x22;\n 1. 1024 \n 2. 8 \n 3. 1 \n 4. 256 &#x22;,{4,&#x22;256&#x22;}}});
+              cas.push_back({&#x22;The C programming language was created by this American computer scientist. &#x22; , {&#x22;\n 1. Willis Ware \n 2. al-Khwarizmi \n 3. Tim Berners Lee \n 4. Dennis Ritchie &#x22;,{4,&#x22;Dennis Ritchie&#x22;}}});
+              cas.push_back({&#x22;How long is an IPv6 address?&#x22; , {&#x22;\n 1. 128 bytes \n 2. 64 bits \n 3. 32 bits \n 4. 128 bits &#x22;,{4,&#x22;128 bits&#x22;}}});
+              cas.push_back({&#x22;In computing, what does MIDI stand for?&#x22; , {&#x22;\n 1. Musical Interface of Digital Instruments \n 2. Modular Interface of Digital Instruments \n 3. Musical Instrument Data Interface \n 4. Musical Instrument Digital Interface &#x22;,{4,&#x22;Musical Instrument Digital Interface&#x22;}}});
+              cas.push_back({&#x22;In computing, what does LAN stand for?&#x22; , {&#x22;\n 1. Light Access Node \n 2. Local Area Network \n 3. Long Antenna Node \n 4. Land Address Navigation &#x22;,{2,&#x22;Local Area Network&#x22;}}});
+              }
+              
+              void general_Questionz()
+              {
+              general.push_back({&#x22;What name represents the letter &#x27;M&#x27; in the NATO phonetic alphabet?&#x22; , {&#x22;\n 1. Max \n 2. Matthew \n 3. Mark \n 4. Mike &#x22;,{4,&#x22;Mike&#x22;}}});
+              general.push_back({&#x22;How would one say goodbye in Spanish?&#x22; , {&#x22;\n 1. Adi&#x26;oacute;s \n 2. Salir \n 3. Au Revoir \n 4. Hola &#x22;,{1,&#x22;Adi&#x26;oacute;s&#x22;}}});
+              general.push_back({&#x22;The words &#x27;bungalow&#x27; and &#x27;shampoo&#x27; originate from the languages of which country?&#x22; , {&#x22;\n 1. Papua New Guinea \n 2. China \n 3. India \n 4. Ethiopia &#x22;,{3,&#x22;India&#x22;}}});
+              general.push_back({&#x22;When was &#x27;YouTube&#x27; founded?&#x22; , {&#x22;\n 1. July 19, 2009 \n 2. May 22, 2004 \n 3. February 14, 2005 \n 4. September 12, 2005 &#x22;,{3,&#x22;February 14, 2005&#x22;}}});
+              general.push_back({&#x22;What was the destination of the missing flight MH370?&#x22; , {&#x22;\n 1. Beijing \n 2. Singapore \n 3. Tokyo \n 4. Kuala Lumpur &#x22;,{1,&#x22;Beijing&#x22;}}});
+              general.push_back({&#x22;What is on display in the Madame Tussaud&#x27;s museum in London?&#x22; , {&#x22;\n 1. Unreleased film reels \n 2. Vintage cars \n 3. Designer clothing \n 4. Wax sculptures &#x22;,{4,&#x22;Wax sculptures&#x22;}}});
+              general.push_back({&#x22;What is the name given to Indian food cooked over charcoal in a clay oven?&#x22; , {&#x22;\n 1. Tiki masala \n 2. Tandoori \n 3. Pani puri \n 4. Biryani &#x22;,{2,&#x22;Tandoori&#x22;}}});
+              general.push_back({&#x22;What is the romanized Russian word for &#x27;winter&#x27;?&#x22; , {&#x22;\n 1. Vesna \n 2. Leto \n 3. Zima \n 4. Osen ; &#x22;,{3,&#x22;Zima&#x22;}}});
+              general.push_back({&#x22;The Swedish word &#x27;Grunka&#x27; means what in English?&#x22; , {&#x22;\n 1. Thing \n 2. People \n 3. Place \n 4. Pineapple &#x22;,{1,&#x22;Thing&#x22;}}});
+              general.push_back({&#x22;Who is the founder of &#x27;The Lego Group&#x27;?&#x22; , {&#x22;\n 1. Jens Niels Christiansen \n 2. Ole Kirk Christiansen \n 3. Kirstine Christiansen \n 4. Gerhardt Kirk Christiansen &#x22;,{2,&#x22;Ole Kirk Christiansen&#x22;}}});
+              general.push_back({&#x22;Five dollars is worth how many nickles?&#x22; , {&#x22;\n 1. 69 \n 2. 25 \n 3. 100 \n 4. 50 &#x22;,{3,&#x22;100&#x22;}}});
+              general.push_back({&#x22;Which of the following languages does NOT use gender as a part of its grammar?&#x22; , {&#x22;\n 1. Danish \n 2. German \n 3. Turkish \n 4. Polish &#x22;,{3,&#x22;Turkish&#x22;}}});
+              general.push_back({&#x22;What is the name of Poland in Polish?&#x22; , {&#x22;\n 1. Polska \n 2. Polszka \n 3. Pupcia \n 4. Pland &#x22;,{1,&#x22;Polska&#x22;}}});
+              general.push_back({&#x22;What is a Burgee?&#x22; , {&#x22;\n 1. A type of food \n 2. A window \n 3. A flag \n 4. A rope &#x22;,{3,&#x22;A flag&#x22;}}});
+              general.push_back({&#x22;If someone said &#x27;you are olid&#x27;, what would they mean?&#x22; , {&#x22;\n 1. You are out of shape/weak. \n 2. You are incomprehensible/an idiot. \n 3. Your appearance is repulsive. \n 4. You smell extremely unpleasant. &#x22;,{4,&#x22;You smell extremely unpleasant.&#x22;}}});
+              general.push_back({&#x22;Whose greyscale face is on the kappa emoticon on Twitch?&#x22; , {&#x22;\n 1. Josh DeSeno \n 2. Justin DeSeno \n 3. John DeSeno \n 4. Jimmy DeSeno &#x22;,{1,&#x22;Josh DeSeno&#x22;}}});
+              general.push_back({&#x22;Which country, not including Japan, has the most people of japanese decent?&#x22; , {&#x22;\n 1. Brazil \n 2. United States of America \n 3. South Korea \n 4. China &#x22;,{1,&#x22;Brazil&#x22;}}});
+              general.push_back({&#x22;In which fast food chain can you order a Jamocha Shake?&#x22; , {&#x22;\n 1. Wendy ;s \n 2. McDonald ;s \n 3. Burger King \n 4. Arby ;s &#x22;,{4,&#x22;Arby ;s&#x22;}}});
+              general.push_back({&#x22;The drug cartel run by Pablo Escobar originated in which South American city?&#x22; , {&#x22;\n 1. Medell  \n 2. Quito \n 3. Bogot; \n 4. Cali &#x22;,{1,&#x22;Medell&#x22;}}});
+              general.push_back({&#x22;Which of the following blood component forms a plug at the site of injuries?&#x22; , {&#x22;\n 1. White blood cells \n 2. Platelets \n 3. Blood plasma \n 4. Red blood cells &#x22;,{2,&#x22;Platelets&#x22;}}});
+              }
+              void historytype()
+              {
+              history.push_back({&#x22;The idea of Socialism was articulated and advanced by whom?&#x22; , {&#x22;\n 1. Joseph Stalin \n 2. Vladimir Putin \n 3. Vladimir Lenin \n 4. Karl Marx &#x22;,{4,&#x22;Karl Marx&#x22;}}});
+              history.push_back({&#x22;Which one of these tanks was designed and operated by the United Kingdom?&#x22; , {&#x22;\n 1. Tiger H1 \n 2. M4 Sherman \n 3. Tog II \n 4. T-34 &#x22;,{3,&#x22;Tog II&#x22;}}});
+              history.push_back({&#x22;The original Roman alphabet lacked the following letters EXCEPT:&#x22; , {&#x22;\n 1. X \n 2. W \n 3. U \n 4. J &#x22;,{1,&#x22;X&#x22;}}});
+              history.push_back({&#x22;The collapse of the Soviet Union took place in which year?&#x22; , {&#x22;\n 1. 1891 \n 2. 1990 \n 3. 1991 \n 4. 1992 &#x22;,{3,&#x22;1991&#x22;}}});
+              history.push_back({&#x22;Which modern day country is the region that was known as Phrygia in ancient times?&#x22; , {&#x22;\n 1. Greece \n 2. Turkey \n 3. Syria \n 4. Egypt &#x22;,{2,&#x22;Turkey&#x22;}}});
+              history.push_back({&#x22;When did the Battle of the Somme begin?&#x22; , {&#x22;\n 1. August 1st, 1916 \n 2. July 1st, 1916 \n 3. July 2nd, 1916 \n 4. June 30th, 1916 &#x22;,{2,&#x22;July 1st, 1916&#x22;}}});
+              history.push_back({&#x22;Who was the first president of the United States?&#x22; , {&#x22;\n 1. George Washington \n 2. James K. Polk \n 3. James Madison \n 4. Thomas Jefferson &#x22;,{1,&#x22;George Washington&#x22;}}});
+              history.push_back({&#x22;Which of the following countries was not an axis power during World War II?&#x22; , {&#x22;\n 1. Japan \n 2. Italy \n 3. Germany \n 4. Soviet Union &#x22;,{4,&#x22; Soviet Union&#x22;}}});
+              history.push_back({&#x22;In 1939, Britain and France declared war on Germany after it invaded which country?&#x22; , {&#x22;\n 1. Poland \n 2. Hungary \n 3. Czechoslovakia \n 4. Austria &#x22;,{1,&#x22;Poland&#x22;}}});
+              history.push_back({&#x22;The &#x27;Trail of Tears&#x27; was a result of which United States President&#x27;s Indian Removal Policy?&#x22; , {&#x22;\n 1. Martin Van Buren \n 2. Harry S. Truman \n 3. John Quincy Adams \n 4. Andrew Jackson &#x22;,{4,&#x22;Andrew Jackson&#x22;}}});
+              history.push_back({&#x22;To what political party did Abraham Lincoln belong when elected POTUS?&#x22; , {&#x22;\n 1. Whig \n 2. Democrat \n 3. Republican \n 4. Independent &#x22;,{3,&#x22;Republican&#x22;}}});
+              history.push_back({&#x22;What year did World War I begin?&#x22; , {&#x22;\n 1. 1905 \n 2. 1925 \n 3. 1914 \n 4. 1919 &#x22;,{3,&#x22;1914&#x22;}}});
+              history.push_back({&#x22;How old was Adolf Hitler when he died?&#x22; , {&#x22;\n 1. 56 \n 2. 65 \n 3. 43 \n 4. 47 &#x22;,{1,&#x22;56&#x22;}}});
+              history.push_back({&#x22;Which of the following was Brazil was a former colony under?&#x22; , {&#x22;\n 1. France \n 2. The Netherlands \n 3. Portugal \n 4. Spain &#x22;,{3,&#x22;Portugal&#x22;}}});
+              history.push_back({&#x22;What is the historical name of Sri Lanka?&#x22; , {&#x22;\n 1. Myanmar \n 2. Colombo \n 3. Ceylon \n 4. Badulla &#x22;,{3,&#x22;Ceylon&#x22;}}});
+              history.push_back({&#x22;What was the name commonly given to the ancient trade routes that connected the East and West of Eurasia?&#x22; , {&#x22;\n 1. Salt Road \n 2. Silk Road \n 3. Spice Road \n 4. Clay Road &#x22;,{2,&#x22;Silk Road&#x22;}}});
+              history.push_back({&#x22;In what year did the Great Northern War, between Russia and Sweden, end?&#x22; , {&#x22;\n 1. 1726 \n 2. 1724 \n 3. 1721 \n 4. 1727 &#x22;,{3,&#x22;1721&#x22;}}});
+              history.push_back({&#x22;Abolitionist John Brown raided the arsenal in which Virginia Town?&#x22; , {&#x22;\n 1. Harper&#x26;#039;s Ferry \n 2. Harrisonburg \n 3. Martinsburg \n 4. Richmond &#x22;,{1,&#x22;Harper&#x26;#039;s Ferry&#x22;}}});
+              history.push_back({&#x22;The Ottoman Empire was dissolved after their loss in which war?&#x22; , {&#x22;\n 1. World War I \n 2. Crimean War \n 3. Serbian Revolution \n 4. Second Balkan War &#x22;,{1,&#x22;World War I&#x22;}}});
+              history.push_back({&#x22;Which famous military commander marched an army, which included war elephants, over the Alps during the Second Punic War?&#x22; , {&#x22;\n 1. Hannibal \n 2. Alexander the Great \n 3. Garmanicus \n 4. Tiberius &#x22;,{1,&#x22;Hannibal&#x22;}}});
+              }
+              void mathematichs()
+              {
+              mathametic.push_back({&#x22;In the hexadecimal system, what number comes after 9?&#x22; , {&#x22;\n 1. The Number 0 \n 2. The Letter A \n 3. 10 \n 4. 16 &#x22;,{2,&#x22;The Letter A&#x22;}}});
+              mathametic.push_back({&#x22;What is the derivative of Acceleration with respect to time?&#x22; , {&#x22;\n 1. Shift \n 2. Jerk \n 3. Bump \n 4. Slide &#x22;,{2,&#x22;Jerk&#x22;}}});
+              mathametic.push_back({&#x22;What is the approximate value of mathematical constant e?&#x22; , {&#x22;\n 1. 1.62 \n 2. 1.41 \n 3. 3.14 \n 4. 2.72 &#x22;,{4,&#x22;2.72&#x22;}}});
+              mathametic.push_back({&#x22;What is the area of a circle with a diameter of 20 inches if p= 3.1415?&#x22; , {&#x22;\n 1. 3141.5 Inches \n 2. 314.15 Inches \n 3. 1256.6 Inches \n 4. 380.1215 Inches &#x22;,{2,&#x22;314.15 Inches&#x22;}}});
+              mathametic.push_back({&#x22;What are the first 6 digits of the number &#x27;Pi&#x27;?&#x22; , {&#x22;\n 1. 3.25812 \n 2. 3.12423 \n 3. 3.14169 \n 4. 3.14159 &#x22;,{4,&#x22;3.14159&#x22;}}});
+              mathametic.push_back({&#x22;In Roman Numerals, what does XL equate to?&#x22; , {&#x22;\n 1. 60 \n 2. 90 \n 3. 40 \n 4. 15 &#x22;,{3,&#x22;40&#x22;}}});
+              mathametic.push_back({&#x22;What is the first Mersenne prime exponent over 1000?&#x22; , {&#x22;\n 1. 1009 \n 2. 2203 \n 3. 1279 \n 4. 1069 &#x22;,{3,&#x22;1279&#x22;}}});
+              mathametic.push_back({&#x22;What prime number comes next after 19?&#x22; , {&#x22;\n 1. 23 \n 2. 21 \n 3. 25 \n 4. 27 &#x22;,{1,&#x22;23&#x22;}}});
+              mathametic.push_back({&#x22;What is the alphanumeric representation of the imaginary number?&#x22; , {&#x22;\n 1. i \n 2. x \n 3. e \n 4. n &#x22;,{1,&#x22;i&#x22;}}});
+              mathametic.push_back({&#x22;To the nearest whole number, how many radians are in a whole circle?&#x22; , {&#x22;\n 1. 3 \n 2. 6 \n 3. 4 \n 4. 5 &#x22;,{2,&#x22;6&#x22;}}});
+              mathametic.push_back({&#x22;What Greek letter is used to signify summation?&#x22; , {&#x22;\n 1. Omega \n 2. Delta \n 3. Sigma \n 4. Alpha &#x22;,{3,&#x22;Sigma&#x22;}}});
+              mathametic.push_back({&#x22;What is the symbol for Displacement?&#x22; , {&#x22;\n 1. r \n 2. Dp \n 3. &#x26;Delta;r \n 4. dr &#x22;,{3,&#x22;&#x26;Delta;r&#x22;}}});
+              mathametic.push_back({&#x22;How many sides does a heptagon have?&#x22; , {&#x22;\n 1. 5 \n 2. 8 \n 3. 6 \n 4. 7 &#x22;,{4,&#x22;7&#x22;}}});
+              mathametic.push_back({&#x22;What is the plane curve proposed by Descartes to challenge Fermat&#x27;s extremum-finding techniques called?&#x22; , {&#x22;\n 1. Descarte&#x26;#039;s Helicoid \n 2. Elliptic Paraboloid of Descartes \n 3. Cartesian Coordinates \n 4. Folium of Descartes &#x22;,{4,&#x22;Folium of Descartes&#x22;}}});
+              mathametic.push_back({&#x22;The French mathematician &#xC9;variste Galois is primarily known for his work in which?&#x22; , {&#x22;\n 1. Galois&#x26;#039; Continued Fractions \n 2. Abelian Integration \n 3. Galois Theory \n 4. Galois&#x26;#039; Method for PDE&#x26;#039;s &#x22;,{3,&#x22;Galois Theory&#x22;}}});
+              mathametic.push_back({&#x22;What is the correct order of operations for solving equations?&#x22; , {&#x22;\n 1. Parentheses, Exponents, Addition, Substraction, Multiplication, Division \n 2. Addition, Multiplication, Division, Subtraction, Addition, Parentheses \n 3. Parentheses, Exponents, Multiplication, Division, Addition, Subtraction \n 4. The order in which the operations are written. &#x22;,{3,&#x22;Parentheses, Exponents, Multiplication, Division, Addition, Subtraction&#x22;}}});
+              mathametic.push_back({&#x22;Which of the following mathematicians made major contributions to game theory?&#x22; , {&#x22;\n 1. Leonhard Euler \n 2. Stefan Banach \n 3. John Von Neumann \n 4. Carl Friedrich Gauss &#x22;,{3,&#x22;John Von Neumann&#x22;}}});
+              mathametic.push_back({&#x22;The notion of a &#x27;set that contains all sets which do not contain themselves&#x27; is a paradoxical idea attributed to which English philospher?&#x22; , {&#x22;\n 1. Francis Bacon \n 2. John Locke \n 3. Alfred North Whitehead \n 4. Bertrand Russel &#x22;,{4,&#x22;Bertrand Russel&#x22;}}});
+              mathametic.push_back({&#x22;Which mathematician refused the Fields Medal?&#x22; , {&#x22;\n 1. Terence Tao \n 2. Andrew Wiles \n 3. Edward Witten \n 4. Grigori Perelman &#x22;,{4,&#x22;Grigori Perelman&#x22;}}});
+              mathametic.push_back({&#x22;What is the fourth digit of p?&#x22; , {&#x22;\n 1. 2 \n 2. 4 \n 3. 3 \n 4. 1 &#x22;,{4,&#x22;1&#x22;}}});
+              }
+              void title()
+              {
+                  system(&#x22;CLS&#x22;);
+                  cout &#x3C;&#x3C; endl;
+                  setcolorandbackground(9,0);
+                  cout &#x3C;&#x3C; &#x22;\t\t\t|-------------------------------------------------------|&#x22; &#x3C;&#x3C; endl;
+                  cout &#x3C;&#x3C; &#x22;\t\t\t|&#x22;;
+                  setcolorandbackground(14,0);
+                  cout &#x3C;&#x3C; &#x22;\tWelcome to The Quiz Game (Team: CPPnewBie)!!&#x22;;
+                  setcolorandbackground(9,0);
+                  cout &#x3C;&#x3C; &#x22;\t|&#x22; &#x3C;&#x3C; endl;
+                  cout &#x3C;&#x3C; &#x22;\t\t\t|-------------------------------------------------------|\n&#x22; &#x3C;&#x3C; endl;
+              }
+              
+              void mainmenu()
+              {
+                  setcolorandbackground(6,0);
+                  cout &#x3C;&#x3C; &#x22;\n\n\t\t&#x22;;
+                  setcolorandbackground(14,13);
+                  cout &#x3C;&#x3C; &#x22;MAIN MENU&#x22;;
+                  setcolorandbackground(9,0);
+                  cout &#x3C;&#x3C; &#x22;\n\n\t1.Start a new game&#x22; &#x3C;&#x3C; endl;
+                  cout &#x3C;&#x3C; &#x22;\n\t2.Instructions&#x22; &#x3C;&#x3C; endl;
+                  cout &#x3C;&#x3C; &#x22;\n\tPress any other key to exit the game&#x22; &#x3C;&#x3C; endl;
+                  setcolorandbackground(8,0);
+                  cout &#x3C;&#x3C; &#x22;\n\tEnter your Choice: &#x22;;
+                  setcolorandbackground(15,0);
+              }
+              
+              
+              
+              void instructions(){
+                  title();
+                  cout &#x3C;&#x3C;&#x22;\n&#x22;;
+                  setcolorandbackground(14,13);
+                  cout &#x3C;&#x3C; &#x22;\t\t\t\tINSTRUCTIONS AND RULES&#x22;;
+                  setcolorandbackground(3,0);
+                  cout &#x3C;&#x3C; &#x22;\n&#x22;;
+                  cout &#x3C;&#x3C; &#x22;\n\t1. You Have Answer Five Questions.&#x22;&#x3C;&#x3C;endl;
+                  cout &#x3C;&#x3C; &#x22;\n\t2. For Every Correct Answer You Will Achieve 10 Points. &#x22;&#x3C;&#x3C;endl;
+                  cout &#x3C;&#x3C;&#x22;\n\t3. For Every Wrong Answer, Your Score is Dicreased By 5.&#x22;&#x3C;&#x3C;endl;
+                  cout &#x3C;&#x3C;&#x22;\n\t4. You Can also skip some quesiton.&#x22;&#x3C;&#x3C;endl;
+                  cout &#x3C;&#x3C;&#x22;\n\t5. If Your Score is 50, You&#x27;r a Genious !&#x22;&#x3C;&#x3C;endl;
+                  cout &#x3C;&#x3C;&#x22;\n\t6. If Your Score is 0 Or Negative , GO And Learn Someting.&#x22;&#x3C;&#x3C;endl;
+                  setcolorandbackground(10,0);
+                  cout &#x3C;&#x3C; &#x22;\n\n\t\tPress &#x27;0&#x27; to go back to main menu....&#x22;;
+                  setcolorandbackground(15,0);
+              }
+              void ScoreText()
+              {
+              &#x9;if(score &#x3C;=0 )
+              &#x9;{
+              &#x9;&#x9;setcolorandbackground(14,13);
+              &#x9;&#x9;cout &#x3C;&#x3C; &#x22;\nCommnet : Go and Learn Something&#x22; &#x3C;&#x3C;endl;
+              &#x9;}
+              &#x9;else if(score == 50) 
+              &#x9;{
+              &#x9;&#x9;setcolorandbackground(14,13);
+              &#x9;&#x9;cout &#x3C;&#x3C; &#x22;\nCommnet : Excellent Work !!&#x22; &#x3C;&#x3C; endl;
+              &#x9;}
+              &#x9;else if (score&#x3E;30 and score&#x3E;=40)
+              &#x9;{
+              &#x9;&#x9;setcolorandbackground(14,13);
+              &#x9;&#x9;cout &#x3C;&#x3C; &#x22;\nCommnet : Good Job !!&#x22; &#x3C;&#x3C; endl;
+              &#x9;}
+              &#x9;else if(score &#x3C;= 20 &#x26;&#x26; score &#x3E;=30)
+              &#x9;{
+              &#x9;&#x9;&#x9;&#x9;setcolorandbackground(14,13);
+              &#x9;&#x9;cout &#x3C;&#x3C; &#x22;\nCommnet : Average  !!&#x22; &#x3C;&#x3C; endl;
+              &#x9;}
+              &#x9;else
+              &#x9;{
+              &#x9;&#x9;setcolorandbackground(14,13);
+              &#x9;&#x9;cout &#x3C;&#x3C; &#x22;\nCommnet : Improve Yourself&#x22; &#x3C;&#x3C; endl;
+              &#x9;}
+              }
+              
+              void totalScore()
+              {
+              &#x9;int select;
+              &#x9;bool flag=false;
+              &#x9;setcolorandbackground(4,0);
+              &#x9;cout &#x3C;&#x3C; &#x22;\nType Your Choice: &#x22;;
+              &#x9;while(1)
+              &#x9;{&#x9;
+              &#x9;cin&#x3E;&#x3E;select;
+              &#x9;switch(select)
+              &#x9;{
+              &#x9;case 1: 
+              &#x9;&#x9;&#x9;score=0,q=0,s=0,correctAns=0,wrongAns=0;
+              &#x9;&#x9;&#x9;general_Questionz();
+              &#x9;&#x9;&#x9;flag=true;
+                &#x9;&#x9;&#x9;for(int i=0; i&#x3C;5; i++)
+              &#x9;&#x9;&#x9;{
+              &#x9;&#x9;&#x9;&#x9;int d = random();
+              &#x9;&#x9;&#x9;&#x9;mainQuestion(general,d);
+              &#x9;&#x9;&#x9;&#x9;cout &#x3C;&#x3C; &#x22;\nPress Any Key For Next Question(Except 0)&#x22; &#x3C;&#x3C; endl;
+              &#x9;&#x9;&#x9;&#x9;getchar();
+              &#x9;&#x9;&#x9;}
+              &#x9;break;
+              &#x9;&#x9;
+              &#x9;&#x9;case 2:
+              &#x9;&#x9;&#x9;score=0,q=0,s=0,correctAns=0,wrongAns=0;
+              &#x9;&#x9;&#x9;computerandScience();
+              &#x9;&#x9;&#x9;flag=true;
+                &#x9;&#x9;&#x9;for(int i=0; i&#x3C;5; i++)
+              &#x9;&#x9;&#x9;{
+              &#x9;&#x9;&#x9;&#x9;int d = random();
+              &#x9;&#x9;&#x9;&#x9;mainQuestion(cas,d);
+              &#x9;&#x9;&#x9;&#x9;cout &#x3C;&#x3C; &#x22;\nPress Any Key For Next Question(Except 0)&#x22; &#x3C;&#x3C; endl;
+              &#x9;&#x9;&#x9;&#x9;getchar();
+              &#x9;&#x9;&#x9;}&#x9;
+              &#x9;&#x9;break;
+              &#x9;&#x9;case 3:
+              &#x9;&#x9;&#x9;score=0,q=0,s=0,correctAns=0,wrongAns=0;
+              &#x9;&#x9;&#x9;flag=true;
+              &#x9;&#x9;&#x9;Entertainment();&#x9;&#x9;&#x9;&#x9;&#x9;
+                &#x9;&#x9;&#x9;for(int i=0; i&#x3C;5; i++)
+              &#x9;&#x9;&#x9;{
+              &#x9;&#x9;&#x9;&#x9;int d = random();
+              &#x9;&#x9;&#x9;&#x9;mainQuestion(ement,d);
+              &#x9;&#x9;&#x9;&#x9;cout &#x3C;&#x3C; &#x22;\nPress Any Key For Next Question(Except 0)&#x22; &#x3C;&#x3C; endl;
+              &#x9;&#x9;&#x9;&#x9;getchar();
+              &#x9;&#x9;&#x9;}
+              &#x9;&#x9;break;
+              &#x9;&#x9;case 4:
+              &#x9;&#x9;&#x9;flag=true;
+              &#x9;&#x9;&#x9;score=0,q=0,s=0,correctAns=0,wrongAns=0;
+              &#x9;&#x9;&#x9;historytype();
+               &#x9;&#x9;&#x9;for(int i=0; i&#x3C;5; i++)
+              &#x9;&#x9;&#x9;{
+              &#x9;&#x9;&#x9;&#x9;int d = random();
+              &#x9;&#x9;&#x9;&#x9;mainQuestion(history,d);
+              &#x9;&#x9;&#x9;&#x9;cout &#x3C;&#x3C; &#x22;\nPress Any Key For Next Question(Except 0)&#x22; &#x3C;&#x3C; endl;
+              &#x9;&#x9;&#x9;&#x9;getchar();
+              &#x9;&#x9;&#x9;}
+              &#x9;&#x9;&#x9;break;
+              &#x9;&#x9;case 5:
+              &#x9;&#x9;&#x9;flag=true;
+              &#x9;&#x9;&#x9;score=0,q=0,s=0,correctAns=0,wrongAns=0;
+              &#x9;&#x9;&#x9;sports();
+               &#x9;&#x9;&#x9;for(int i=0; i&#x3C;5; i++)
+              &#x9;&#x9;&#x9;{
+              &#x9;&#x9;&#x9;&#x9;int d = random();
+              &#x9;&#x9;&#x9;&#x9;mainQuestion(sport,d);
+              &#x9;&#x9;&#x9;&#x9;cout &#x3C;&#x3C; &#x22;\nPress Any Key For Next Question(Except 0)&#x22; &#x3C;&#x3C; endl;
+              &#x9;&#x9;&#x9;&#x9;getchar();
+              &#x9;&#x9;&#x9;}
+              &#x9;&#x9;&#x9;break;
+              &#x9;&#x9;case 6:
+              &#x9;&#x9;&#x9;flag=true;
+              &#x9;&#x9;&#x9;score=0,q=0,s=0,correctAns=0,wrongAns=0;
+              &#x9;&#x9;&#x9;mathematichs();
+               &#x9;&#x9;&#x9;for(int i=0; i&#x3C;5; i++)
+              &#x9;&#x9;&#x9;{
+              &#x9;&#x9;&#x9;&#x9;int d = random();
+              &#x9;&#x9;&#x9;&#x9;mainQuestion(mathametic,d);
+              &#x9;&#x9;&#x9;&#x9;cout &#x3C;&#x3C; &#x22;\nPress Any Key For Next Question(Except 0)&#x22; &#x3C;&#x3C; endl;
+              &#x9;&#x9;&#x9;&#x9;getchar();
+              &#x9;&#x9;&#x9;}&#x9;
+              &#x9;&#x9;&#x9;break;&#x9;&#x9;
+              &#x9;&#x9;default:
+              &#x9;&#x9;&#x9;cout &#x3C;&#x3C; &#x22;Press The Right Key&#x22; &#x3C;&#x3C; endl;
+              &#x9;&#x9;&#x9;break;
+              &#x9;&#x9;
+              &#x9;}
+              &#x9;
+              &#x9;if(flag)
+              &#x9;break;
+              
+              &#x9;}&#x9;
+              &#x9;cout &#x3C;&#x3C; endl;
+              &#x9;system(&#x22;cls&#x22;);
+              &#x9;setcolorandbackground(14,10);
+              &#x9;cout &#x3C;&#x3C; &#x22;&#x9;&#x9;&#x9;&#x9;&#x9;------------Your Score Board-------------\n\n&#x22; &#x3C;&#x3C; endl;
+              &#x9;setcolorandbackground(3,0);
+              &#x9;//cout &#x3C;&#x3C; q &#x3C;&#x3C; endl;
+              &#x9;cout &#x3C;&#x3C; &#x22;Skipped Question : &#x22; &#x3C;&#x3C; s &#x3C;&#x3C; &#x22; \n&#x22; &#x3C;&#x3C; &#x22;You Answered : &#x22; &#x3C;&#x3C; 5-s &#x3C;&#x3C; endl;
+              &#x9;cout &#x3C;&#x3C; &#x22;Correct Answered : &#x22; &#x3C;&#x3C; correctAns &#x3C;&#x3C; &#x22; \n&#x22; &#x3C;&#x3C; &#x22;Wrong Answered : &#x22; &#x3C;&#x3C; wrongAns &#x3C;&#x3C; endl;
+              &#x9;
+              &#x9;ScoreText();
+              
+              &#x9;
+              &#x9;
+              
+              &#x9;setcolorandbackground(14,13);
+              &#x9;cout &#x3C;&#x3C; &#x22;\nYour Total Score is: &#x22; &#x3C;&#x3C; score &#x3C;&#x3C; endl;&#x9;
+              &#x9;cout &#x3C;&#x3C; &#x22;\n&#x22;;
+              &#x9;setcolorandbackground(15,0);
+              &#x9;cout &#x3C;&#x3C; &#x22;---&#x3E;&#x3E;  Play Again [y/n?]&#x22; &#x3C;&#x3C; endl;&#x9;
+              &#x9;cout &#x3C;&#x3C; &#x22;----&#x3E;&#x3E; Press any key to Exit From The Game &#x22; &#x3C;&#x3C; endl;
+              &#x9;char c ;
+              &#x9;cin&#x3E;&#x3E; c;
+              &#x9;if(c!=&#x27;y&#x27;)
+              &#x9;{
+              &#x9;&#x9;exit(0);
+              &#x9;}
+              &#x9;
+              
+              }
+              
+              void StartGame()
+              {
+              &#x9;system(&#x22;cls&#x22;);
+              &#x9;setcolorandbackground(14,13);
+              &#x9;cout &#x3C;&#x3C;&#x22;\nSelect Category : \n&#x22; &#x3C;&#x3C; endl;
+              &#x9;setcolorandbackground(9,0);
+              &#x9;cout &#x3C;&#x3C;&#x22; &#x9;1. General Knowledge&#x9;&#x9;&#x22; &#x3C;&#x3C; endl;
+              &#x9;cout &#x3C;&#x3C;&#x22; &#x9;2. Science &#x26; Computers &#x9;&#x9;&#x22; &#x3C;&#x3C; endl;
+              &#x9;cout &#x3C;&#x3C;&#x22; &#x9;3. Entertainment    &#x9;&#x9;&#x22; &#x3C;&#x3C; endl;
+              &#x9;cout &#x3C;&#x3C;&#x22;    &#x9;4. History                  &#x22; &#x3C;&#x3C; endl;
+              &#x9;cout &#x3C;&#x3C;&#x22;    &#x9;5. Sports                  &#x22; &#x3C;&#x3C; endl;
+              &#x9;cout &#x3C;&#x3C;&#x22;    &#x9;6. Mathematics                  &#x22; &#x3C;&#x3C; endl;
+              &#x9;totalScore();
+              }
+              
+              
+              
+              int main()
+              {
+                
+                  while(1)
+                  {
+                      title();
+                      mainmenu();
+                  
+                      char choice;
+                      cin &#x3E;&#x3E; choice;
+                      if(choice==&#x27;1&#x27;)
+                      {      &#x9;
+                          StartGame();      
+                      }
+                      else if(choice==&#x27;2&#x27;)
+                      {
+                          instructions();
+                          char ch;
+                          cin &#x3E;&#x3E; ch;
+                    
+                          while(ch!=&#x27;0&#x27;)
+                          {
+                              setcolorandbackground(4,0);
+                              cout &#x3C;&#x3C; &#x22;\t\tPlease press &#x27;0&#x27; to go back to main menu....&#x22;;
+                              setcolorandbackground(15,0);
+                              cin &#x3E;&#x3E; ch;
+                          }
+                          continue;
+                      }
+                      else   
+                          break;
+                  }
+                  return 0;
+              }
+              
+              
+              
+            </code>
+          </pre>
+          
+
+        </div>
+      </div>
+ 
+
+      
+
+    </div>
+  </div>
+</section><!-- End About Us Section -->    
+
+  
+    
+    
+           
+
+    
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-12 text-center">
+          <div class="footer-logo">
+
+            <a class="navbar-brand" href="#">SRJOY</a>
+            <p>Thanks so much</p>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="copyrights">
+      <div class="container">
+        <p>&copy; Copyrights SR JOY. All rights reserved.</p>
+        <div class="credits">
+       
+          Designed by <a href="https://github.com/srj101/">srjoy</a>
+        </div>
+      </div>
+    </div>
+
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/modal-video/js/modal-video.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/superfish/superfish.min.js"></script>
+  <script src="assets/vendor/hoverIntent/hoverIntent.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+ 
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/vendor/lightbox.js"></script>
+  <script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
+</script>
+
+</body>
+
+</html>
